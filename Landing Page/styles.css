@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #006400;
+  --text-dark: #000000;
+  --text-light: #C0C0C0;
+  --max-width: 1300px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+input::placeholder {
+  color: var(--text-dark);
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  min-height: 100vh;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: var(--max-width);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.nav__logo a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.nav__links .link {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav__links .link:hover {
+  color: var(--primary-color);
+}
+
+.search__box {
+  padding: 0.5rem 0;
+  border-bottom: 2px solid var(--text-dark);
+}
+
+.search__box input {
+  color: var(--text-dark);
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.search__box i {
+  color: var(--text-dark);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 2rem;
+  padding-top: 100px;
+  position: relative;
+}
+
+.container__left,
+.container__right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.container__left .content {
+    max-width: 400px;
+    display: grid;
+    gap: 1rem;
+  }
+  
+
+.container__right {
+    justify-content: flex-end;
+}
+  
+.content h1 {
+  font-size: 4rem;
+  line-height: 4rem;
+  color: var(--text-dark);
+  font-weight: 700;
+}
+
+.content p {
+  color: var(--text-dark);
+}
+
+.btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.btns button {
+  padding: 0.5rem 2rem;
+  color: var(--text-dark);
+  font-size: 1rem;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid var(--text-dark);
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button.read__more:hover {
+  background-color: var(--text-light);
+}
+
+button.our__blogs:hover {
+  background-color: var(--text-light);
+}
+
+.chevrons {
+  display: flex;
+  gap: 1rem;
+}
+
+.chevrons span {
+  height: 40px;
+  width: 40px;
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid var(--text-dark);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.chevrons span:hover {
+  background-color: var(--text-light);
+}
+
+form {
+  width: 350px;
+  display: grid;
+  border-radius: 5px;
+  background-color: var(--text-light);
+  color: var(--text-dark);
+}
+
+form h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 2rem;
+}
+
+.form__group {
+  display: grid;
+  padding: 0 2rem;
+  margin-bottom: 1rem;
+}
+
+.form__group input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: var(--text-dark);
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--text-dark);
+}
+
+form button {
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--text-dark);
+  cursor: pointer;
+}
+
